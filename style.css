@@ -45,6 +45,9 @@ header nav ul li a {
   color: white;
   padding: 50px 20px;
   text-align: center;
+  background-image: url('assets/hero-banner.jpg');  /* Add background image */
+  background-size: cover;
+  background-position: center;
 }
 
 .hero h1 {
@@ -97,6 +100,13 @@ header nav ul li a {
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
 }
 
+.car-item img {
+  width: 100%;
+  border-radius: 8px;
+  height: auto;
+  object-fit: cover;
+}
+
 .car-item h2 {
   font-size: 1.8em;
   margin-bottom: 10px;
@@ -120,4 +130,58 @@ form {
   background-color: white;
   padding: 30px;
   border-radius: 10px;
-  box-shadow: 0 4
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  max-width: 600px;
+  margin: 20px auto;
+}
+
+form label {
+  display: block;
+  margin-bottom: 8px;
+}
+
+form input,
+form textarea {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 20px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+}
+
+form button {
+  background-color: #FF6600;
+  color: white;
+  padding: 15px 20px;
+  font-size: 1.2em;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+form button:hover {
+  background-color: #FF4500;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .hero h1 {
+    font-size: 2em;
+  }
+
+  .hero p {
+    font-size: 1em;
+  }
+
+  header nav ul {
+    flex-direction: column;
+  }
+
+  header nav ul li {
+    margin: 10px 0;
+  }
+
+  .car-listings {
+    grid-template-columns: 1fr;
+  }
+}
