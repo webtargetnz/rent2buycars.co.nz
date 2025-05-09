@@ -4,47 +4,31 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Rent2Buy Cars</title>
+    <link rel="stylesheet" href="css/style.css" />
   </head>
   <body>
-    <div class="container">
-      <h1>Rent2BuyCars Application Form</h1>
-      <form id="application-form">
-        <label for="fullName">Full Name</label>
-        <input type="text" id="fullName" name="fullName" required />
-        
-        <label for="email">Email</label>
-        <input type="email" id="email" name="email" required />
-        
-        <label for="phone">Phone</label>
-        <input type="text" id="phone" name="phone" required />
-        
-        <label for="dob">Date of Birth</label>
-        <input type="date" id="dob" name="dob" required />
-        
-        <label for="address">Residential Address</label>
-        <input type="text" id="address" name="address" required />
-        
-        <label for="employment">Employment</label>
-        <input type="text" id="employment" name="employment" required />
-        
-        <label for="income">Weekly Income</label>
-        <input type="text" id="income" name="income" required />
-        
-        <label for="accountNumber">Bank Account Number</label>
-        <input type="text" id="accountNumber" name="accountNumber" required />
-        
-        <label for="notes">Additional Notes</label>
-        <textarea id="notes" name="notes"></textarea>
-        
-        <button type="submit">Submit Application</button>
-      </form>
-    </div>
-    <script>
-      document.getElementById("application-form").addEventListener("submit", function (event) {
-        event.preventDefault();
-        alert("Application submitted successfully!");
-        // Integrate with backend or email service here
-      });
-    </script>
+    <header>
+      <nav>
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="cars.html">Car Listings</a></li>
+          <li><a href="application.html">Apply Now</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </nav>
+    </header>
+    <main>
+      <section class="hero">
+        <h1>Welcome to Rent2BuyCars.co.nz</h1>
+        <p>Rent a car with the option to buy. Apply today!</p>
+        <a href="application.html">Apply Now</a>
+      </section>
+
+      <section class="how-it-works">
+        <h2>How Rent2Buy Works</h2>
+        <p>Learn how you can drive away in your car today with our rent-to-own program.</p>
+        <!-- Include steps or an infographic here -->
+      </section>
+    </main>
   </body>
 </html>
