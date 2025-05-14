@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://webtargetnz.github.io/rent2buycars/sitemap.xml
